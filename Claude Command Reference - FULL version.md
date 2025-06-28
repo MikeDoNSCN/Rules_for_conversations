@@ -60,12 +60,52 @@ You can now say:
 
 ---
 
+## Process Management Requirements
+
+### Before Running Apps/Scripts/Websites:
+⚠️ **MANDATORY SEQUENCE**:
+1. **Check**: Search for any existing versions running
+2. **Kill**: Terminate all existing instances first
+3. **Launch**: Start only ONE new instance
+4. **Verify**: Confirm single instance is running
+
+### Applies To:
+- Running applications
+- Executing scripts
+- Opening websites/servers
+- Starting development servers
+- Launching any executable
+
+### Process Check Commands:
+```bash
+# Check processes
+ps aux | grep [app-name]        # Linux/Mac
+tasklist | findstr [app-name]   # Windows
+
+# Kill processes  
+pkill [app-name]                # Linux/Mac
+taskkill /f /im [app-name]      # Windows
+```
+
+### No Duplicate Rule:
+- **Never launch multiple instances** of the same app/script
+- **Always verify** only one instance is running after launch
+- **Clean shutdown** before starting new versions
+
+---
+
 ## Coding Workflow Requirements
 
 ### After Every Code/Edit Task:
 1. **Summary**: `[SUMMARY of LAST CODE]` with full file path
 2. **File Opening**: ⚠️ **MANDATORY** - Open the file automatically 
 3. **No Exceptions**: This applies to ALL coding/editing tasks (create, modify, debug, etc.)
+
+### Before Running Apps/Scripts/Websites (if applicable):
+1. **Process Check**: Verify existing versions running
+2. **Process Kill**: Terminate all existing instances
+3. **Single Launch**: Start only ONE new instance
+4. **Verify**: Confirm single instance running
 
 ### File Opening Triggers:
 - Creating new files
