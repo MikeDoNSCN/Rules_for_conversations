@@ -1,12 +1,12 @@
-# Claude Command Reference
+# AI Command Reference
 
 ## Command Overview
-This file defines special commands that activate specific Claude behaviors. When these commands appear at the start of a message, Claude will immediately switch to the corresponding mode.
+This file defines special commands that activate specific AI behaviors. When these commands appear at the start of a message, AI will immediately switch to the corresponding mode.
 
 ## Answer Reference System
 
-### How Claude References Answers
-Every answer from Claude will include:
+### How AI References Answers
+Every answer from AI will include:
 1. **Reference Number**: `[A#1]`, `[A#2]`, etc.
 2. **Topic Tags**: `[#TOPIC-NAME]` for main topics
 3. **Cross-references**: `[ref:A#5,#MIKE-CORE]` when building on previous answers
