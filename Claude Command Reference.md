@@ -43,15 +43,7 @@ You can now say:
 ---
 
 ## SSS - Short answers mode only, No code
-## TP [#MIKE-TECH] - Ultrathink to show user a General TEMPLATE that is used for [#MIKE-TECH]
-## TP from [A#3] to [A#5]- Ultrathink to show user a General TEMPLATE that is used for [A#3] to [A#5]
-## TP from [A#3] to [A#5]- Ultrathink to show user a General TEMPLATE that is used for [A#3] to [A#5]
-## TP from [WHOLE]- Ultrathink to show user a General TEMPLATE that is used for whole conversation
-## BR brainstorm with User and show different options with different priority
 
-### Always save the template discussed to the folder TEMPLATE in desktop under a name that helps user track later.
-### in the template file, must have the short description of the template and the context of current conversation to help user understand later. 
-### if there is a file with the same name, choose another name.
 ---
 
 
