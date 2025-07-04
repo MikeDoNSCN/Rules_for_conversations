@@ -1,12 +1,12 @@
-# AI Command Reference
+# Command Reference
 
 ## Command Overview
-This file defines special commands that activate specific AI behaviors. When these commands appear at the start of a message, AI will immediately switch to the corresponding mode.
+This file defines special commands that activate specific  behaviors. When these commands appear at the start of a message, AI will immediately switch to the corresponding mode.
 
 ## Answer Reference System
 
-### How AI References Answers
-Every answer from AI will include:
+### How Claude References Answers
+Every answer from Claude will include:
 1. **Reference Number**: `[A#1]`, `[A#2]`, etc.
 2. **Topic Tags**: `[#TOPIC-NAME]` for main topics
 3. **Cross-references**: `[ref:A#5,#MIKE-CORE]` when building on previous answers
@@ -18,6 +18,10 @@ Every answer from AI will include:
 [A#2][#MIKE-TECH][ref:A#1] Building on BMAD concepts, MIKE focuses on...
 
 [A#3][#OPTIMIZATION][ref:A#2,#MIKE-TECH] To optimize the MIKE approach from answer #2...
+
+At the end of each answer, after finishing code, you have to summarize what you did in the code, in what file (full path).
+[SUMMARY of LAST CODE]
+
 ```
 ### Output Structure
 ```
@@ -32,19 +36,3 @@ Project created at: [path]
 - `#DEBUG` - Troubleshooting and fixes
 - `#CONCEPT` - Theoretical explanations
 - `#OPTIMIZATION` - Performance improvements
-
-### Using References
-You can now say:
-- "Continue from A#5"
-- "Expand on #MIKE-TECH"
-- "Connect A#2 and A#7"
-- "What did you say in A#10?"
-
----
-
-## SSS - Short answers mode only, No code
-
----
-
-
----
