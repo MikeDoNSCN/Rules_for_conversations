@@ -36,3 +36,4 @@ Project created at: [path]
 - `#DEBUG` - Troubleshooting and fixes
 - `#CONCEPT` - Theoretical explanations
 - `#OPTIMIZATION` - Performance improvements
+SSS Mean no code, short answer not more than 10 lines
